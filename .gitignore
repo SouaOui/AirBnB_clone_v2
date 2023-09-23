@@ -1,0 +1,7 @@
+__pycache__/
+__pycache__/*
+.dist/
+file.json
+script
+script.py
+script_1.sql
