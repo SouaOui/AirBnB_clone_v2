@@ -1,8 +1,10 @@
+#!/usr/bin/python3
+"""get started with flask"""
 from flask import Flask
 
 app = Flask(__name__)
 
-# Define a route that listens on 0.0.0.0 and port 5000
+
 @app.route('/', methods=['GET'], strict_slashes=False)
 def hello_hbnb():
     return "Hello HBNB!"
