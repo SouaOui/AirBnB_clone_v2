@@ -24,6 +24,7 @@ def c_with_text(text):
     return f"C {text}"
 
 
+@app.route('/python/', defaults={'text': 'is_cool'}, strict_slashes=False)
 @app.route('/Python/<text>', methods=['GET'], strict_slashes=False)
 def python_with_text(text):
     # Replace underscores with spaces in the text
